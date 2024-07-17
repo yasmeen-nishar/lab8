@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set environment variable with "key" as "foo" and "value" as "bar" 
-        run: echo " foo=value" >> $GITHUB_ENV
+        run: echo "foo=value" >> $GITHUB_ENV
 
       - name: Echo the environment variable "foo" from previous step
         run: echo "Hello, $foo"
