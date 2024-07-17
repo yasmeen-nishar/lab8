@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set environment variable with "key" as "foo" and "value" as "bar" 
-        run: echo "foo=value" >> $GITHUB_ENV
+        run: echo "foo=bar" >> $GITHUB_ENV
 
       - name: Echo the environment variable "foo" from previous step
         run: echo "Hello, $foo"
@@ -23,7 +23,7 @@ jobs:
           echo "Masked key = $api_key"
 
       - name: Create a warning Log for this message "This is a warning message."
-        run: echo "::warning This is a warning message."
+        run: echo "::warning::This is a warning message."
 
       - name: Create an error annotation with following parameters, file=app.py line=49 message=nullValue 
         run: echo "::error file=app.py,line=49::nullValue"
