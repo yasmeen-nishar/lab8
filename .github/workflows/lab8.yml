@@ -2,7 +2,7 @@ name: Workflow Commands
 
 on:
     workflow_dispatch: 
-    push: 
+    push:  
 
 jobs:
   commands_job:
